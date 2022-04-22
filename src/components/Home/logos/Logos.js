@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react';
 import './Logos.css'
-import { ModeContext } from '../context/ModeContext';
+import { ModeContext } from '../../../context/ModeContext';
 
 
 export default function Logos() {

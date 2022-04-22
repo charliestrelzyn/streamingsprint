@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import '../../titledetails/TitleDetails.css';
-import { StreamSources } from '../streaminglist/StreamSources';
-import { ModeContext } from '../../../context/ModeContext';
+import '../../pages/titledetails/TitleDetails.css';
+import { StreamSources } from '../contentDetails/streaminglist/StreamSources';
+import { ModeContext } from '../../context/ModeContext';
 import SwipeableViews from 'react-swipeable-views'
 
 
 
 
-const AllTitleDetails = ({titleDetails}) => {
+const TitleContentDetails = ({titleDetails}) => {
  
     const {darkMode,setDarkMode}=useContext(ModeContext);
 
@@ -25,7 +25,7 @@ const AllTitleDetails = ({titleDetails}) => {
                     <div className="streaming-content-container">
                         <div className="streaming-content">
                             <p className="stream-header">Streaming On:</p>
-                            <p><span><StreamSources/></span></p>
+                            <StreamSources/>
                         </div>
                     </div>
                         
@@ -82,4 +82,4 @@ const AllTitleDetails = ({titleDetails}) => {
     )
 }
 
-export default AllTitleDetails
+export default TitleContentDetails

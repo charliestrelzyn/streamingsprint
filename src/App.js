@@ -5,12 +5,12 @@ import Navbar from './components/header/Navbar';
 import Home from './pages/home/Home.js'
 import About from './pages/About';
 import Contact from './pages/contact/Contact.js';
-import SearchResults from './pages/search/SearchResults';
+import Search from './pages/search/Search';
 import TitleDetails from './pages/titledetails/TitleDetails';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { StreamSources } from './pages/titledetails/streaminglist/StreamSources.js';
+import { StreamSources } from './components/contentDetails/streaminglist/StreamSources';
 import {ModeContext} from './context/ModeContext';
-import AllTitleDetails from './pages/titledetails/moretitledetails/AllTitleDetails.js';
+import TitleContentDetails from './components/contentDetails/TitleContentDetails';
 
 
 function App() {
@@ -30,11 +30,11 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />}/>
         <Route path="/contact" element={<Contact />}/>
-        <Route path="/search" element={<SearchResults />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/" element={<Home />}/>
         <Route path="/titledetails/:imdbID" element={<TitleDetails />}/>
         <Route path="/titledetails/:imdbID" element={<StreamSources />}/>
-        <Route path="/titledetails/:imdbID" element={<AllTitleDetails />}/>
+        <Route path="/titledetails/:imdbID" element={<TitleContentDetails />}/>
       </Routes>
       
       {/* <Footer /> */}

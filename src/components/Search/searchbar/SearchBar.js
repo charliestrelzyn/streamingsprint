@@ -4,7 +4,7 @@ import { ModeContext } from '../../../context/ModeContext.js';
 
 
 
-const SearchBox =(props) => {
+const SearchBar =(props) => {
     
     const {darkMode,setDarkMode}=useContext(ModeContext);
 
@@ -19,4 +19,4 @@ const SearchBox =(props) => {
     )
 }
 
-export default SearchBox
+export default SearchBar

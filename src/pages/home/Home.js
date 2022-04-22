@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
-import Main from '../../components/main/Main'
-import Logos from '../../components/Logos'
+import Main from '../../components/Home/main/Main'
+import Logos from '../../components/Home/logos/Logos'
 import './Home.css'
 import { ModeContext } from '../../context/ModeContext.js'
 
@@ -9,7 +9,7 @@ function Home() {
   const {darkMode,setDarkMode}=useContext(ModeContext);
 
   return (
-      <div class={darkMode ? "dark-home-container" : "home-container"}>
+      <div className={darkMode ? "dark-home-container" : "home-container"}>
         <Main />
         <Logos/>
         <footer>

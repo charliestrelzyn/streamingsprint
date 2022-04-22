@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './Main.css'
 import { useNavigate } from 'react-router-dom'
-import { ModeContext } from '../../context/ModeContext'
+import { ModeContext } from '../../../context/ModeContext';
 
 
 const Main =(props) => {

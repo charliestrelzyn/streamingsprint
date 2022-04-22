@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect }from 'react'
-import SearchBox from '../search/searchbox/Searchbox';
-import TitleList from '../search/TitleList.js'
+import SearchBar from '../Search/searchbar/SearchBar';
+import TitleList from './TitleList'
 import './SearchResults.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ModeContext } from '../../context/ModeContext';
@@ -38,12 +38,11 @@ const SearchResults =() => {
   return (
     <div className={darkMode? "dark-searchresults-container" : "searchresults-container" }>
             <div className="searchbar">
-             <SearchBox  searchValue={searchValue} setSearchValue={setSearchValue}/>
+             <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
             </div>
             <div className="movie-list-container">
               <TitleList  titles={titles}/>
           </div>
-
     </div>
   )
 }
