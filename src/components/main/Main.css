@@ -1,0 +1,145 @@
+* {
+    font-family: 'Archivo', sans-serif;
+     padding: 0px;
+     margin: 0px;
+     
+}
+
+.dark-main-container {
+  background: #1b1f24; 
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.light-main-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  font-size: clamp(3rem, 6.5vw, 7rem);
+  font-weight: 700;
+    background: -webkit-linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.main-text {
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    background: -webkit-linear-gradient(180deg, #1E1818 0%, #0602C4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark-main-text {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: white;
+}
+
+.stream-btn {
+  
+  background:linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%);
+  color: white;
+  height: 80px;
+  width: 300px;
+  border-radius: 34px;
+  font-size: clamp(1rem, 2vw, 2rem);
+  z-index: 1;
+  box-shadow: 0 1px 15px 0;
+}
+
+.stream-btn:hover {
+  cursor: pointer;
+  transition: all 0.8s ease-out ;
+  background: -webkit-linear-gradient(180deg, #1E1818 0%, #0602C4 100%);
+
+}
+
+
+
+@media only screen and (max-width: 990px) {
+
+  .dark-main-container {
+    height: 60vh;
+  }
+  
+  .light-main-container {
+    height: 60vh;;
+  }
+
+  .main-text {
+    margin-bottom: 0px;
+    padding: 0 25px;
+  }
+
+  .dark-main-text {
+    margin-bottom: 0px;
+    padding: 0 25px;
+  }
+    
+    .stream-btn {
+      height: 80px;
+      width: 250px;
+      border-radius: 32px;
+    }
+}
+
+
+@media only screen and (max-width: 570px) {
+
+  .dark-main-container {
+    height: 90vh;
+  }
+  
+  .light-main-container {
+    height: 90vh;
+  }
+
+  .main-text {
+    margin-bottom: 0px;
+    padding: 0 25px;
+  }
+
+  .dark-main-text {
+    margin-bottom: 0px;
+    padding: 0 25px;
+  }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+  .main-text {
+    padding: 0 20px;
+  }
+
+  .dark-main-text {
+    margin-top: 0px;
+    padding: 0 20px;
+}
+
+  .stream-btn {
+  height: 60px;
+  width: 200px;
+  border-radius: 32px;
+}
+
+.light-main-container {
+  height: 70vh;
+}
+
+.dark-main-container {
+  height: 70vh;
+}
+
+} 

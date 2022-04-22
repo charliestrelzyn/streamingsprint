@@ -1,0 +1,75 @@
+.logo-container {
+    height: 20vh;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+  }
+
+  .logo {
+    height: 5vh;
+    margin: 5vh;
+    object-fit: cover;
+  
+  }
+
+  @media only screen and (max-width: 1370px) {
+    .logo-container {
+      height: 30vh;
+    }
+
+
+  }
+  @media only screen and (max-width: 990px) {
+    .logo-container {
+        height: 30vh;
+        margin-top: 10vh;
+      }
+
+      .logo {
+        height: 3vh;
+        margin: 3vh;
+        object-fit: cover;
+      
+      }
+    }
+
+      @media only screen and (max-width: 667px) {
+        .logo-container {
+          height: 20vh;
+        }
+
+        .logo {
+          height: 2.5vh;
+          margin: 2.5vh;
+        }
+    
+  }
+
+
+  @media only screen and (max-width: 590px){
+    .logo-container {
+      height: 40vh;
+    }
+
+    .logo {
+      height: 2.5vh;
+      margin: 2.5vh;
+    
+    }
+
+  }
+
+  @media only screen and (max-width: 390px) {
+    .logo-container {
+        height: 20vh;
+      }
+
+      .logo {
+        height: 2.5vh;
+        margin: 2.5vh;
+        object-fit: cover;
+      
+      }
+  }

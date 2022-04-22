@@ -1,0 +1,16 @@
+.streamsource-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 50px; 
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.stream-info {
+    color: white;
+}
+

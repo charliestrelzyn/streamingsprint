@@ -1,0 +1,9 @@
+.dark-about-container{
+    background: #1b1f24; 
+  height: 1190px;
+}
+
+.light-about-container{
+    background: white;
+    height: 1190px;
+}

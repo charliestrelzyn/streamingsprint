@@ -1,0 +1,25 @@
+.slide {
+    padding: 15;
+    color: '#fff';
+    display: none;
+ 
+  }
+
+  .slide1 {
+    background: '#FEA900';
+    height: 400px;
+  
+  }
+
+  .slide2 {
+    background: '#B3DC4A';
+    height: 400px;
+  }
+
+  @media screen and (max-width: 553px) {
+    .slide {
+       
+        display: block;
+      
+      }
+  }
