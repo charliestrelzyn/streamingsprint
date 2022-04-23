@@ -4,14 +4,18 @@
     
 }
 
+.mobile-container {
+   display:none;
+}
+
 
 .title-details-container {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "title streaming"
-    "image details";
-} 
+    "image details"; 
+}
 
 /* TITLE CONTAINER */
 
@@ -23,6 +27,7 @@
     height: 200px;
     padding: 0px;
     display: flex;
+    
 }
 
 h2 {
@@ -42,12 +47,13 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .streaming-content {
     background:linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%); 
-    width: 700px;
-    height: 120px;
+    width: 40vw;
+    height: 17vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,11 +86,12 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 800px;
+    width: 50%;
     margin-bottom: 15px;
 }
 
-.title-img {
+.title-image {
     height: 90%;
     width: 90%;
     object-fit: contain;
@@ -100,7 +107,7 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 700px;
-    width: 100%;
+    width: 50%;
 }
 
 
@@ -124,6 +131,13 @@ h2 {
     text-align: center;
 }
 
+.desktop-container {
+    display: flex;
+    width: 100vw;
+    height: 180vw;
+    justify-content: space-between;
+}
+
 /* DARK MODE */
 
 
@@ -133,15 +147,18 @@ h2 {
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "title streaming"
-    "image details";  
+    "image details"; 
 }
 
 .dark-details-container {
     grid-area: details;
-    margin: 0px;
-    border-radius: 24px;
-    letter-spacing: 1px;
-    padding: 10px;
+    font-size: clamp(0.25rem, 2.5vw, 1.1rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 50%;
     color: white;
 }
 
@@ -151,11 +168,17 @@ h2 {
 
 }
 
+.desktop-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+
 
 
 @media screen and (max-width: 960px) {
-
- 
 
     .dark-title-details-container {
         background: #1b1f24; 
@@ -163,8 +186,9 @@ h2 {
         grid-template-columns: 50% 50%;
         grid-template-areas: 
         "title streaming"
-        "image details";  
+        "image details"; 
     }
+
 
     h2 {
         font-size: clamp(3.5rem, 5vw, 4.5rem);
@@ -180,14 +204,17 @@ h2 {
 
     .streaming-content {
         background:linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%); 
-        width: 65%;
+        width: 45vw;
+        height: 8vh;
         height: 120px;
+        justify-content: flex-start;
     }
 
     .stream-header {
-        padding-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 20px;
         color: white;
         letter-spacing: 3px;
     }
@@ -200,12 +227,11 @@ h2 {
     
     .details-container {
         grid-area: details;
-        font-size: clamp(0.2rem, 2.vw, 0.9rem);
-        align-items: center;
-        justify-content: center;
+        margin: 0px;
+        border-radius: 24px;
+        letter-spacing: 1px;
+        padding: 10px;
         height: 700px;
-        width: 90%;
-        margin-right: 40px;
     }
 
     .dark-details-container {
@@ -232,11 +258,18 @@ h2 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .desktop-container {
+        display: flex;
+        width: 100vw;
+        height: 120vh;
+        justify-content: space-between;
+    
+    }
+
+    
     }
     
-    
-
-
 
     @media screen and (max-width: 553px) {
 
@@ -246,13 +279,45 @@ h2 {
             flex-direction: column;
         }
 
+        .dark-title-details-container {
+            grid-template-columns: none;
+            display: flex;
+            flex-direction: column;
+        }
+
         h2 {
             font-size: clamp(2.5rem, 5vw, 3rem);
+            margin: 10px 15px;
 
         }
 
 
-       
+        .desktop-container {
+            display: none;
+        }
+
+        .mobile-container {
+            display: block;
+            margin-top: 50px;
+            padding: 25px;
+            display:flex;
+            height: 800px;
+        }
+
+        .dark-mobile-container {
+            margin-top: 50px;
+            padding: 25px;
+            display:flex;
+            height: 800px;
+            color: white;
+        }
+
+        .streaming-content {
+            background:linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%); 
+            width: 85%;
+            height: 120px;
+            margin-top: 55px;
+        }
         
        
        

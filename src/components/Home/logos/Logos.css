@@ -23,13 +23,13 @@
   }
   @media only screen and (max-width: 990px) {
     .logo-container {
-        height: 30vh;
+        height: 50vh;
         margin-top: 10vh;
       }
 
       .logo {
-        height: 3vh;
-        margin: 3vh;
+        height: 5vh;
+        margin: 5vh;
         object-fit: cover;
       
       }
@@ -63,13 +63,14 @@
 
   @media only screen and (max-width: 390px) {
     .logo-container {
-        height: 20vh;
+        height: 70vh;
       }
 
       .logo {
-        height: 2.5vh;
-        margin: 2.5vh;
+        height: 4.5vh;
+        margin: 4.5vh;
         object-fit: cover;
       
       }
   }
+

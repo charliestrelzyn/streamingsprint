@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './App.css';
 import Navbar from './components/header/Navbar';
-// import Header from './components/header/Header';
+import Footer from './components/footer/Footer'
 import Home from './pages/home/Home.js'
 import About from './pages/About';
 import Contact from './pages/contact/Contact.js';
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Router>
-    <div className="App">
+    <div className={darkMode ? "App dark-app-container" : "App app-container"}>
     <ModeContext.Provider value={{darkMode,setDarkMode}}>
       <Navbar toggleMode={toggleMode}/>
 
@@ -37,7 +37,7 @@ function App() {
         <Route path="/titledetails/:imdbID" element={<TitleContentDetails />}/>
       </Routes>
       
-      {/* <Footer /> */}
+      <Footer />
       </ModeContext.Provider>
     </div>
     </Router>

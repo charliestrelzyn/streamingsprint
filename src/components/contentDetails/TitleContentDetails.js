@@ -3,6 +3,7 @@ import '../../pages/titledetails/TitleDetails.css';
 import { StreamSources } from '../contentDetails/streaminglist/StreamSources';
 import { ModeContext } from '../../context/ModeContext';
 import SwipeableViews from 'react-swipeable-views'
+import Swipe from './swipe/Swipe'
 
 
 
@@ -28,7 +29,7 @@ const TitleContentDetails = ({titleDetails}) => {
                             <StreamSources/>
                         </div>
                     </div>
-                        
+                        <div className="desktop-container">
                             <div className='image-container'>  
                                 <img className="title-image" src={titleDetail.Poster} alt=''></img>
                             </div>
@@ -69,9 +70,12 @@ const TitleContentDetails = ({titleDetails}) => {
                                 
                                 </div>
                         
-                            
+                        
+                                </div>
                         </div>
-                    
+                        <div className={darkMode ? "dark-mobile-container" : "mobile-container"}>
+                        <Swipe titleDetails={titleDetails} className="swipe"/>
+                        </div>
                     </div>
 
                 

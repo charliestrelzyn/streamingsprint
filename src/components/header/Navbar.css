@@ -7,11 +7,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    padding-bottom: 30px;
-    
+    margin-bottom: 30px;  
   }
 
   .dark-navbar {
+    background: #1A2129;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -20,8 +20,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background: #1b1f24;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     
   }
   
@@ -177,10 +176,8 @@ button {
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
-      
-      
     }
-  
+    
     .nav-menu.active {
       background: #9989fc;
       left: 0;
@@ -245,8 +242,8 @@ button {
 
   .dark-btn {
     margin-left: 3vw;
-    width: 25vw;
-    height: 7vh;   
+    width: 35vw;
+    height: 5vh;  
  }
 
  .dark-btn:hover {
@@ -254,7 +251,7 @@ button {
   color: white;
   border-radius: 8px;
   border:none;
-  width: 25vw;
+  width: 35vw;
   transition: all 0.7s ease-in-out;
   cursor: pointer;
   height: 5vh;
@@ -262,8 +259,8 @@ button {
 
 .light-btn {
   margin-left: 3vw;
-  width: 25vw;
-  height: 5vh;
+  width: 35vw;
+  height: 5vh; 
   color: white;
   
 }
@@ -273,7 +270,7 @@ button {
   color: rgb(39, 38, 38);
   border-radius: 8px;
   border:none;
-  width: 25vw;
+  width: 35vw;
   transition: all 0.7s ease-in-out;
   cursor: pointer;
   height: 5vh;

@@ -21,9 +21,10 @@
 }
 
 h1 {
-  padding-top: 4vh;
+  padding-top: 2vh;
   padding-bottom: 2vh;
-  font-size: clamp(3rem, 6.5vw, 7rem);
+  margin-bottom: 40px;
+  font-size: clamp(3rem, 8.5vw, 7rem);
   font-weight: 700;
     background: -webkit-linear-gradient(180deg, #FF0000 0%, #5C5ABE 100%);
   -webkit-background-clip: text;
@@ -54,6 +55,7 @@ h1 {
   width: 300px;
   border-radius: 34px;
   font-size: clamp(1rem, 2vw, 2rem);
+  margin: 80px;
   z-index: 1;
   box-shadow: 0 1px 15px 0;
 }
@@ -88,9 +90,10 @@ h1 {
   }
     
     .stream-btn {
-      height: 80px;
-      width: 250px;
-      border-radius: 32px;
+      height: 100px;
+      width: 300px;
+      border-radius: 36px;
+      font-size: 25px;
     }
 }
 
@@ -132,7 +135,8 @@ h1 {
   height: 60px;
   width: 200px;
   border-radius: 32px;
-}
+  font-size: 20px;
+  }
 
 .light-main-container {
   height: 70vh;

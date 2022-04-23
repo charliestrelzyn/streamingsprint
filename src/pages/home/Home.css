@@ -1,48 +1,30 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    height: 145vh;
+    height: 80vh;
     
 }
 
 .dark-home-container {
     background: #1b1f24;
-    height: 145vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 }
 
-reference-dark{
-    color: white;
-  }  
-  
-  .reference{
-    color: black;
-  }
-  
-  .footer-container {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
 
-  .dark-footer-container {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1b1f24;
-   
-    
-  }
 
-  .reference-dark{
-    color: white;
-  }  
-  
-  .reference{
-    color: black;
-  }
+@media only screen and (max-width: 960px) {
+
+  .home-container {
+    height: 150vh;
+    
+}
+
+.dark-home-container {
+
+    height: 150vh;
+}
+ 
+}
+

@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import Main from '../../components/Home/main/Main'
 import Logos from '../../components/Home/logos/Logos'
 import './Home.css'
+import Footer from '../../components/footer/Footer'
 import { ModeContext } from '../../context/ModeContext.js'
 
 function Home() {
@@ -11,12 +12,7 @@ function Home() {
   return (
       <div className={darkMode ? "dark-home-container" : "home-container"}>
         <Main />
-        <Logos/>
-        <footer>
-            <div className={darkMode ? "dark-footer-container" : "footer-container"}>
-              <a className={darkMode ? "reference-dark" : "reference"}href="https://www.watchmode.com/">Streaming Data Provided By WatchMode</a>
-            </div>
-            </footer>
+        <Logos />
     </div>
   )
 }

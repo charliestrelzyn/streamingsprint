@@ -14,7 +14,6 @@ export const StreamSources = () => {
         const response = await fetch(url);
         const data = await response.json();
 
-        console.log(data)
         setStream(data)
     }
 
@@ -28,19 +27,14 @@ export const StreamSources = () => {
     const streamFilter = stream.filter(free => free.price === null).map(filterFree => (
       " " + filterFree.name ))
 
-    // const noStreamFilter = stream.filter(paid => paid.price === ` `).map(filterPaid => (
-    //   "No Stream Free"
-    // )) 
 
     const streaming =(`${streamFilter}`) 
-    // const noStreaming =(`${noStreamFilter}`) 
-    
-    // const streamingData = streamFilter ? streaming : noStreaming
+  
 
   return (
     <div className="streamsource-container">
         
-      <span className="stream-info">{streaming}</span>
+      <p className="stream-info">{streaming}</p>
             
        
     </div>

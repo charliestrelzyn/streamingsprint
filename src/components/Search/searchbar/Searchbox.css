@@ -94,20 +94,20 @@
     @media only screen and (max-width: 390px) {
 
         .search-input {
-            width: 340px;
+            width: 330px;
             height: 25px;
             border-radius: 14px;
         }
 
         .dark-search-input {
-            width: 340px;
+            width: 330px;
             height: 25px;
             border-radius: 14px;
         }
 
         .search-border {
             height: 55px;
-            width: 370px;
+            width: 360px;
         }
 
     }

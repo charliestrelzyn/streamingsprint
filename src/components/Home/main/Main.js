@@ -22,7 +22,7 @@ const Main =(props) => {
                   navigate("/search")}}>Start Searching</button>
             </div>
             <div>
-                <p className={darkMode ? "dark-main-text" :"main-text"}>Search thousands of streaming providers including</p>
+                <p className={darkMode ? "dark-main-text" :"main-text"}>Search thousands of streaming providers including:</p>
             </div>
            
 
