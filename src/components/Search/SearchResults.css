@@ -26,11 +26,11 @@
 }
 
 h4 {
- padding-top: 10px;
- font-size: 25px;
- text-align: left;
- padding-bottom: 5px;
- color: rgb(77, 73, 73);
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 5px;
+    color: rgb(77, 73, 73);
 }
 
 
@@ -46,32 +46,31 @@ h4 {
 
 @media only screen and (max-width: 990px) { 
 
-.poster {
-  
-    margin: 30px 30px;
-    height: 250px;
-    width: 170px;
-    object-fit: fill;
-    box-shadow: 0 3px 10px 0;
-    border-radius: 4px;
-}
+    .poster {
+    
+        margin: 30px 30px;
+        height: 250px;
+        width: 170px;
+        object-fit: fill;
+        box-shadow: 0 3px 10px 0;
+        border-radius: 4px;
+    }
 
-.poster:hover {
-    height: 330px;
-    width: 240px;
-    border-radius: 4px;
-    object-fit: fill;
-    box-shadow: 0 5px 20px 0;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out ;
-}
+    .poster:hover {
+        height: 330px;
+        width: 240px;
+        border-radius: 4px;
+        object-fit: fill;
+        box-shadow: 0 5px 20px 0;
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out ;
+    }
 
 }
 
 @media only screen and (max-width: 390px) { 
 
     .poster {
-      
         margin: 25px 10px;
         height: 220px;
         width: 150px;
@@ -90,4 +89,4 @@ h4 {
         transition: all 0.2s ease-in-out ;
     }
     
-    }
+}

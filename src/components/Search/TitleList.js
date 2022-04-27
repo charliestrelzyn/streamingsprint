@@ -5,10 +5,10 @@ import './SearchResults.css';
 const TitleList = ({titles}) => {
     return (
         <>
-        {titles.map((title)=> 
+        {titles.map((title,index)=> 
         <div className="card-container">
-            <div>
-            <Link to={`/titledetails/${title.imdbID}`}><img className="poster"src={title.Poster} alt={title.Title}></img></Link>
+            <div key={index}>
+            <Link to={`/titledetails/${title.imdbID}`}><img key={title.Poster}className="poster"src={title.Poster} alt={title.Title}></img></Link>
             </div>
         </div>)}
         </>

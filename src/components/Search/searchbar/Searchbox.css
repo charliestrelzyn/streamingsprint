@@ -41,73 +41,73 @@
     align-items: center;
     position: relative;
     height: 100px;
+}
+
+@media only screen and (max-width: 990px) { 
+
+    .search-input {
+        width: 500px;
+        height: 25px;
+        border-radius: 14px;
+        font-size: 20px;
     }
 
-    @media only screen and (max-width: 990px) { 
-
-        .search-input {
-            width: 500px;
-            height: 25px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        .dark-search-input {
-            width: 500px;
-            height: 25px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        .search-border {
-            height: 55px;
-            width: 529px;
-            border-radius: 17px;
-        }
-
+    .dark-search-input {
+        width: 500px;
+        height: 25px;
+        border-radius: 14px;
+        font-size: 20px;
     }
 
-    @media only screen and (max-width: 572px) {
-
-        .search-input {
-            width: 400px;
-            height: 25px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        .dark-search-input {
-            width: 400px;
-            height: 25px;
-            border-radius: 14px;
-            font-size: 20px;
-        }
-
-        .search-border {
-            height: 55px;
-            width: 430px;
-            border-radius: 17px;
-        }
-
+    .search-border {
+        height: 55px;
+        width: 529px;
+        border-radius: 17px;
     }
 
-    @media only screen and (max-width: 390px) {
+}
 
-        .search-input {
-            width: 330px;
-            height: 25px;
-            border-radius: 14px;
-        }
+@media only screen and (max-width: 572px) {
 
-        .dark-search-input {
-            width: 330px;
-            height: 25px;
-            border-radius: 14px;
-        }
+    .search-input {
+        width: 400px;
+        height: 25px;
+        border-radius: 14px;
+        font-size: 20px;
+    }
 
-        .search-border {
-            height: 55px;
-            width: 360px;
-        }
+    .dark-search-input {
+        width: 400px;
+        height: 25px;
+        border-radius: 14px;
+        font-size: 20px;
+    }
+
+    .search-border {
+        height: 55px;
+        width: 430px;
+        border-radius: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .search-input {
+        width: 330px;
+        height: 25px;
+        border-radius: 14px;
+    }
+
+    .dark-search-input {
+        width: 330px;
+        height: 25px;
+        border-radius: 14px;
+    }
+
+    .search-border {
+        height: 55px;
+        width: 360px;
+    }
 
     }

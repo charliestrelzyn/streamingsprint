@@ -7,70 +7,71 @@
     margin-top: 10vh;
   }
 
-  .logo {
+.logo {
     height: 5vh;
     margin: 5vh;
     object-fit: cover;
   
+}
+
+@media only screen and (max-width: 1370px) {
+
+  .logo-container {
+    height: 30vh;
   }
 
-  @media only screen and (max-width: 1370px) {
-    .logo-container {
-      height: 30vh;
-    }
+}
 
+@media only screen and (max-width: 990px) {
 
+  .logo-container {
+    height: 50vh;
+    margin-top: 10vh;
   }
-  @media only screen and (max-width: 990px) {
-    .logo-container {
-        height: 50vh;
-        margin-top: 10vh;
-      }
 
-      .logo {
-        height: 5vh;
-        margin: 5vh;
-        object-fit: cover;
-      
-      }
-    }
+  .logo {
+    height: 5vh;
+    margin: 5vh;
+    object-fit: cover;
+  }
+}
 
-      @media only screen and (max-width: 667px) {
-        .logo-container {
-          height: 20vh;
-        }
+@media only screen and (max-width: 667px) {
+  .logo-container {
+    height: 20vh;
+  }
 
-        .logo {
-          height: 2.5vh;
-          margin: 2.5vh;
-        }
+  .logo {
+    height: 2.5vh;
+    margin: 2.5vh;
+  }
     
+}
+
+
+@media only screen and (max-width: 590px){
+
+  .logo-container {
+    height: 40vh;
   }
 
-
-  @media only screen and (max-width: 590px){
-    .logo-container {
-      height: 40vh;
-    }
-
-    .logo {
-      height: 2.5vh;
-      margin: 2.5vh;
-    
-    }
-
+  .logo {
+    height: 2.5vh;
+    margin: 2.5vh;
   }
 
-  @media only screen and (max-width: 390px) {
-    .logo-container {
-        height: 70vh;
-      }
+}
 
-      .logo {
-        height: 4.5vh;
-        margin: 4.5vh;
-        object-fit: cover;
-      
-      }
+@media only screen and (max-width: 390px) {
+  .logo-container {
+    height: 70vh;
   }
+
+  .logo {
+    height: 4.5vh;
+    margin: 4.5vh;
+    object-fit: cover;
+  }
+  
+}
 

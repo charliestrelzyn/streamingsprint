@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <div className={darkMode ? "dark-contact-container" : "light-contact-container" }>
-      <h1>Contact</h1>
+      <h2>Coming soon</h2>
     </div>
   );
 }
